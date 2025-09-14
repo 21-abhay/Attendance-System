@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.row{
+  border: 2px solid black;
+}
+
+.btn{
+  border: 5px solid black;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 20px;
+  background: radial-gradient(rgb(108, 108, 229), rgb(94, 67, 67),rgb(165, 73, 73));
+  color: rgb(197, 243, 97);
+  font-weight: bolder;
+  cursor: pointer;
+}

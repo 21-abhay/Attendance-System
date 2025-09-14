@@ -1,0 +1,23 @@
+.stats{
+    border:  2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    overflow: scroll;
+}
+.stats table {
+    border:  2px solid black;
+}
+.stats table tbody{
+    border:  2px solid black;
+}
+.stats table tbody tr{
+    border:  2px solid black;
+}
+.stats table tbody td{
+    border-right:  2px solid black;
+    border-bottom:  2px solid black;
+    padding: 5px 10px;
+}
