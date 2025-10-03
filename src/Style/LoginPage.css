@@ -1,0 +1,74 @@
+/* Background */
+.login-container {
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(53, 52, 52), #ff004f);
+  padding: 20px;
+}
+
+/* Login Box */
+.login-box, .welcome-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.login-box:hover, .welcome-box:hover {
+  transform: scale(1.03);
+}
+
+/* Heading */
+.login-box h2, .welcome-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+.login-box input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.login-box input:focus {
+  border: 1px solid #ff004f;
+}
+
+/* Buttons */
+.login-box button, .welcome-box button {
+  background: linear-gradient(90deg, #333, #ff004f);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.login-box button:hover, .welcome-box button:hover {
+  background: linear-gradient(90deg, #ff004f, #333);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .login-box, .welcome-box {
+    max-width: 90%;
+    padding: 20px;
+  }
+}

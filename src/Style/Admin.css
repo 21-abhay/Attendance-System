@@ -1,51 +1,81 @@
-.table{
+.table-con{
     width: 100%;
     height: 70%;
     max-height: 900px;
     overflow-x: scroll;
     font-size: 20px;
 }
-.col{
+.table{
+    border-collapse: collapse;
+    table-layout: fixed; /* Fix column width */
+}
+.tbody{  /* table body */
     border: 2px solid rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
+  display: table-row-group; /* restore table body behavior */
 }
-.row{
+.row{ /* tr*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+  display: table-row; /* restore row behavior */
     /* padding: 10px; */
 }
-.cell{
+.table-con tr:nth-child(even) {
+  background-color: #cecbcb;
+}
+
+.cell{  /* td */
     min-width: 62px;
     /* border: 2px solid red; */
     border-right: 3px solid black;
     /* border-bottom: 3px solid black; */
     padding: 10px 5px;
     text-align: center;
+    height: inherit;
+    /* color: blue; */
+  display: table-cell; /* make td behave as real td */
+  vertical-align: middle; /* aligns content */
 }
-.big_cell{
+.big_cell{ /* td */
     /* width: 120px; */
     width: 200px;
     font-weight: bolder;
     /* font-size: 20px; */
 }
-.small_cell{
+.small_cell{ /* td */
     width: 70px;
 }
 
-.header{
+.header{ /* tr*/
     position: sticky;
     top: 0px;
     background-color: rgb(165, 131, 131);
     font-weight: bolder;
     /* width: 200px; */
     /* font-size: 20px; */
+  background: linear-gradient(rgba(53, 52, 52), #ff004f);
+  color: white;
 }
-.sticky_cell{
+.sticky_cell{ /* td */
     position: sticky;
     left: 0;
     background-color: rgb(165, 131, 131);
     /* width: 200px; */
+  background: linear-gradient(rgba(53, 52, 52), #ff004f);
+  color: white;
+}
+.sticky_cell a{
+  color: white;
+}
+.holidays{ /* td */
+    background-color: rgb(226, 226, 23);
+}
+.absent{/* td */
+    background-color: #e93030;
+}
+.mark_absentDays{/* td */
+    background-color: rgb(240, 166, 102);
 }

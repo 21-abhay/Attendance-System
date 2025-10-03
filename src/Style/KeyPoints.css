@@ -1,0 +1,67 @@
+.notes-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.notes-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ff004f;
+  border-bottom: 2px solid #ff004f;
+  padding-bottom: 10px;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notes-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.pointer {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(rgba(53, 52, 52), #ff004f);
+  margin-top: 6px;
+}
+
+.notes-item p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+  color: #e0e0e0;
+}
+
+.notes-item:hover p {
+  color: #fff;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .notes-container {
+    padding: 15px;
+  }
+  .notes-heading {
+    font-size: 1.4rem;
+  }
+  .notes-item p {
+    font-size: 1rem;
+  }
+}
